@@ -137,17 +137,34 @@
 // export default App;
 
 //条件文と繰り返し
-function App() {
-  const myfavoriteFruits = "orange";
-  const fruits = ["apple", "banana", "orange", "peach"];
-  return (
-    <ul>
-      {fruits.map((fruit, index) => (
-        <li key={index}>
-          {fruit === myfavoriteFruits ? <strong>{fruit}</strong> : fruit}
-        </li>
-      ))}
-    </ul>
-  );
-}
-export default App;
+// function App() {
+//   const myfavoriteFruits = "orange";
+//   const fruits = ["apple", "banana", "orange", "peach"];
+//   return (
+//     <ul>
+//       {fruits.map((fruit, index) => (
+//         <li key={index}>
+//           {fruit === myfavoriteFruits ? <strong>{fruit}</strong> : fruit}
+//         </li>
+//       ))}
+//     </ul>
+//   );
+// }
+// export default App;
+
+// // 通常の関数
+// function normalFunc() {
+//   console.log("normalFunc this:", this);
+// }
+
+// // アロー関数
+// const arrowFunc = () => {
+//   console.log("arrowFunc this:", this);
+// };
+
+// const obj = { test: normalFunc, testArrow: arrowFunc };
+
+// obj.test(); // obj が this になる
+// obj.testArrow(); // 外側の this (ここではundefined) になる
+
+// export default arrowFunc;
